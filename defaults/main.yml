@@ -1,0 +1,31 @@
+# CentOS系固有のNameのインストール対象パッケージ
+centos_dev_tools:
+  - "@Development tools"
+  - mailx
+  - bind-utils
+  - nmap
+
+# debian系固有のNameのインストール対象パッケージ
+debian_dev_tools:
+  - bash-completion
+  - bmon
+  - curl
+  - git
+  - htop
+  - iftop
+  - iotop
+  - iproute2
+  - iputils-ping
+  - iptraf
+  - iptraf-ng
+  - mailutils
+  - net-tools
+  - nmap
+  - sudo
+  - sysstat
+  - telnet
+  - tree
+  - unzip
+  - vim
+  - wget
+  - zip
