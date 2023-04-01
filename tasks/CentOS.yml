@@ -1,7 +1,0 @@
----
-- name: install the CentOS Devtools packages
-  yum:
-    name: "{{ packages }}"
-    state: present
-  vars:
-    packages: "{{ centos_dev_tools }}"
