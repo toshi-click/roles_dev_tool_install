@@ -1,10 +1,29 @@
 ---
 # パッケージインストール-----------------------------------------------------------------------------------------
 - name: Install Ubuntu common dev tool packages
-  apt:
-    pkg: "{{ packages }}"
+  ansible.builtin.package:
+    name:
+      - ansible
+      - bash-completion
+      - bmon
+      - curl
+      - git
+      - htop
+      - iftop
+      - iotop
+      - iproute2
+      - iputils-ping
+      - iptraf
+      - iptraf-ng
+      - mailutils
+      - net-tools
+      - nmap
+      - sudo
+      - sysstat
+      - telnet
+      - tree
+      - unzip
+      - vim
+      - wget
+      - zip
     state: present
-    update_cache: yes
-    cache_valid_time: 3600
-  vars:
-    packages: "{{ dev_tools }}"
